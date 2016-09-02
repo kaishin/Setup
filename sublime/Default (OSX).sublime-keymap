@@ -1,0 +1,55 @@
+[
+  { "keys": ["ctrl+n"], "command": "toggle_side_bar" },
+  { "keys": ["j", "j"], "command": "exit_insert_mode",
+    "context": [{ "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+  },
+  { "keys": ["k", "k"], "command": "exit_insert_mode",
+    "context": [{ "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+  },
+  { "keys": ["ctrl+a"], "command": "exit_insert_mode",
+    "context": [{ "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+  },
+  {"keys": ["ctrl+c"], "command": "less_tabs",
+    "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+k"], "command": "travel_to_pane",
+    "args": {"direction": "up"}, "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+l"], "command": "travel_to_pane",
+    "args": {"direction": "right"}, "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+j"], "command": "travel_to_pane",
+    "args": {"direction": "down"}, "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+h"], "command": "travel_to_pane",
+    "args": {"direction": "left"}, "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+w"], "command": "close_pane",
+    "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+u"], "command": "open_url",
+    "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["ctrl+s"], "command": "sort_lines",
+    "context": [{"key": "setting.command_mode"}]
+  },
+  {"keys" : ["ctrl+v"], "command": "chain",
+    "args": {
+      "commands": [
+        ["create_pane", {"direction": "right"}],
+        ["travel_to_pane", {"direction": "right"}],
+        ["show_overlay", {"overlay": "goto", "show_files": true}]
+      ]
+    }
+  },
+  {"keys" : ["ctrl+b"], "command": "chain",
+    "args": {
+      "commands": [
+        ["create_pane", {"direction": "down"}],
+        ["travel_to_pane", {"direction": "down"}],
+        ["show_overlay", {"overlay": "goto", "show_files": true}]
+      ]
+    }
+  },
+  { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
+]
