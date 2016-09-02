@@ -1,0 +1,75 @@
+{
+	"added_words":
+	[
+		"toolbar",
+		"app",
+		"apps",
+		"Xcode",
+		"Helvetica",
+		"Reda",
+		"Lemeden",
+		"affordance",
+		"refactor",
+		"workflows",
+		"superview",
+		"subview",
+		"subviews",
+		"superclasses",
+		"learnt",
+		"unstyled"
+	],
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"close_on_open_new": true,
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.log",
+		".DS_STORE"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".bundle",
+		".git",
+		".sass-cache",
+		".vagrant",
+		".publish",
+		"_vendor",
+		"bower_components",
+		"cache",
+		"log",
+		"node_modules",
+		"_site",
+		"tmp",
+		"vendor"
+	],
+	"font_face": "SF Mono Regular",
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Markdown"
+	],
+	"ignored_words":
+	[
+		"codebase",
+		"ios",
+		"know—",
+		"skillsets",
+		"subclassing",
+		"subdomains",
+		"—things"
+	],
+	"margin": 0,
+	"save_on_focus_lost": true,
+	"show_panel_on_build": false,
+	"tab_size": 2,
+	"tabs_small": true,
+	"theme": "Afterglow-orange.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
