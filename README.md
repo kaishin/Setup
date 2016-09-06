@@ -33,7 +33,12 @@ unzip tmp.zip -d ~ > /dev/null 2>&1
 rm -rf tmp.zip > /dev/null 2>&1
 mv ~/dotfiles-master ~/.dotfiles
 
-rcup -t fish vim osx git ruby
+rcup -t fish
+rcup -t vim
+rcup -t osx
+rcup -t git
+rcup -t ruby
+rcup -t fish-git
 
 curl -s https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh > /dev/null 2>&1
 ~~~
